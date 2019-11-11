@@ -48,7 +48,7 @@ class GeniusSwitch(GeniusZone, SwitchDevice):
 
         The zone is deemed 'off' in this mode, although the plugs may actually be on.
         """
-        await self._zone.set_mode("timer")
+        await self._zone.set_mode("off")
 
     async def async_turn_on(self, **kwargs) -> None:
         """Set the zone to override/on ({'setpoint': true}) for x seconds."""
